@@ -1,0 +1,248 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: url(../images/kitchen.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+
+h5 {
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+header {
+  margin-top: 50px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: ivory;
+}
+
+header h1 {
+  text-shadow: 2px 2px 2px #6D6875;
+}
+
+header p {
+  font-style: italic;
+  text-shadow: 1px 1px 1px #6D6875;
+}
+
+div.container {
+  width: 1200px;
+}
+
+div.col {
+  padding: 0;
+}
+
+div.cuisine {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0.25rem;
+  font-size: 20px;
+  color: ivory;
+  text-shadow: 0 0 5px black;
+}
+
+div.cuisine:hover {
+  cursor: pointer;
+  box-shadow: 0 0 40px ivory;
+}
+
+div.clicked {
+  box-shadow: 0 0 40px ivory;
+}
+
+#american {
+  background: url(../images/american.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#british {
+  background: url(../images/british.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#chinese {
+  background: url(../images/chinese.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#eastern-european {
+  background: url(../images/eastern-european.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#european {
+  background: url(../images/european.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#french {
+  background: url(../images/french.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#german {
+  background: url(../images/german.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#greek {
+  background: url(../images/greek.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#indian {
+  background: url(../images/indian.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#irish {
+  background: url(../images/irish.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#italian {
+  background: url(../images/italian.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#japanese {
+  background: url(../images/japanese.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#korean {
+  background: url(../images/korean.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#latin-american {
+  background: url(../images/latin-american.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#medditerranean {
+  background: url(../images/medditerranean.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#mexican {
+  background: url(../images/mexican.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#middle-eastern {
+  background: url(../images/middle-eastern.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#southern {
+  background: url(../images/southern.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#spanish {
+  background: url(../images/spanish.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#thai {
+  background: url(../images/thai.jpg) no-repeat center;
+  background-size: 100% auto;
+}
+
+#search-bar {
+  padding-top: 25px;
+}
+
+button.home-btn {
+  position: absolute;
+  top: 100px;
+}
+
+div.cuisine-nav {
+  margin-bottom: 10px;
+}
+
+div.cuisine-nav button {
+  background-color: rgba(255, 205, 178);
+  border-color: #FFB4A2;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+div.cuisine-nav button:focus {
+  outline: none;
+}
+
+div.recipe-info h3 {
+  font-style: italic;
+}
+
+div.cuisine-bar {
+  color: ivory;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  width: 100%;
+  height: 10rem;
+  text-shadow: 0px 0px 10px black;
+  margin-bottom: 10px;
+}
+
+div.filtered-recipes {
+  background: rgba(255, 255, 240, 0.75);
+  margin-bottom: 15px;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+div.recipe-info h3 {
+  padding-top: 40px;
+}
+
+div.filtered-recipes img {
+  float: right;
+  width: 200px;
+  margin: 0 0 0 1rem;
+}
+
+button.like-btn {
+  outline: none;
+  background-color: #d44b6b;
+  border: none;
+  border-radius: 50%;
+  color: ivory;
+  box-shadow: 1px 1px 1px #6D6875;
+}
+
+button.like-btn:hover {
+  cursor: pointer;
+  background-color: #e58fa3;
+}
+
+i.fas {
+  font-size: 15px;
+}
+
+div.recipe-detail {
+  padding: 1rem 0;
+}
+
+div.ingredient {
+  margin-bottom: 20px;
+}
+
+/* .comments {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 10px;
+  font-size: 0.85rem;
+}
+
+.comments li {
+  margin: 2px 0;
+  letter-spacing: 0.2px;
+} */
