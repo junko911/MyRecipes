@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function(e){
     const cuisineContainer = document.querySelector(".container")
     const ingredientsForm = document.querySelector(".form-inline")
     const ingredientsFormInput = document.querySelector(".form-control")
-    const apiUrl = "http://localhost:3000/api/v1/cuisines"
-    const commentsUrl = "http://localhost:3000/api/v1/comments"
+    const apiUrl = "https://flatiron-mod3.herokuapp.com/api/v1/cuisines"
+    const commentsUrl = "https://flatiron-mod3.herokuapp.com/api/v1/comments"
     let filterKeywords = []
     let cuisineType = ""
     let ingredient = ""
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 
     const updateLikes = target => {
         const recipeId = target.closest(".filtered-recipes").dataset.id
-        fetch(`http://localhost:3000/api/v1/recipes/${recipeId}`)
+        fetch(`https://flatiron-mod3.herokuapp.com/api/v1/recipes/${recipeId}`)
         .then(res => res.json())
         .then(recipe => addLike(recipe.likes, recipeId))
     }
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(e){
               likes: currentLike + 1
             })
         }
-        fetch(`http://localhost:3000/api/v1/recipes/${id}`, options)
+        fetch(`https://flatiron-mod3.herokuapp.com/api/v1/recipes/${id}`, options)
         .then(res => res.json())
         .then(recipe => {
             addLikeCount(recipe.likes, id)
