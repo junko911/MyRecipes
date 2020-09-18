@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(e){
 
-    const BASE_URL = window.location.href.includes("heroku") ? "https://flatiron-mod3.herokuapp.com/" : "http://localhost:3000/"
+    const BASE_URL = window.location.href.includes("heroku") ? "https://flatiron-mod3.herokuapp.com/api/v1/" : "http://localhost:3000/api/v1/"
 
     const cuisineContainer = document.querySelector(".container")
     const ingredientsForm = document.querySelector(".form-inline")
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 
     const updateLikes = target => {
         const recipeId = target.closest(".filtered-recipes").dataset.id
-        fetch(`${BASE_URL}api/v1/recipes/${recipeId}`)
+        fetch(`${BASE_URL}recipes/${recipeId}`)
         .then(res => res.json())
         .then(recipe => addLike(recipe.likes, recipeId))
     }
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(e){
               likes: currentLike + 1
             })
         }
-        fetch(`${BASE_URL}api/v1/recipes/${id}`, options)
+        fetch(`${BASE_URL}recipes/${id}`, options)
         .then(res => res.json())
         .then(recipe => {
             addLikeCount(recipe.likes, id)
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                 const recipeContainer = document.querySelector(".recipe-container")
                 
                 let fetchFilteredRecipes = () => {
-                    fetch(`${CUISINE_URL}/${cuisineType}/?ingredient=${ingredient}`)
+                    fetch(`${BASE_URL}${cuisineType}/?ingredient=${ingredient}`)
                     .then(resp => resp.json())
                     .then(data => {
                         allRecipesArray = data 
@@ -244,11 +244,11 @@ document.addEventListener("DOMContentLoaded", function(e){
     const fetchRecipes = container => {
         const filterKeyword = filterKeywords.join('')
         if (ingredient === "") {
-            fetch(`${CUISINE_URL}/${cuisineType}?${filterKeyword}`)
+            fetch(`${BASE_URL}${cuisineType}?${filterKeyword}`)
             .then(resp => resp.json())
             .then(data => renderRecipes(container, data))   
         } else {
-            fetch(`${CUISINE_URL}/${cuisineType}?ingredient=${ingredient}&${filterKeyword}`)
+            fetch(`${BASE_URL}${cuisineType}?ingredient=${ingredient}&${filterKeyword}`)
             .then(resp => resp.json())
             .then(data => renderRecipes(container, data))  
         }
