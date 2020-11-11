@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", e => {
     
-    const BASE_URL = window.location.href.includes("heroku") ? "https://flatiron-mod3.herokuapp.com/api/v1/" : "http://localhost:3000/api/v1/"
+    const BASE_URL = window.location.href.includes("heroku") ? "https://mod3-myrecipes.herokuapp.com/api/v1/" : "http://localhost:3000/api/v1/"
     
     const cuisineBtns = document.querySelectorAll(".cuisine")
     let filterKeywords = []

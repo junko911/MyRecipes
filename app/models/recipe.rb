@@ -47,7 +47,7 @@ class Recipe < ApplicationRecord
     end
 
     def as_json(_options = nil)
-       {
+        {
             id: id,
             title: title,
             content: content,
@@ -60,6 +60,6 @@ class Recipe < ApplicationRecord
                     amount: ingredient_recipe.amount
                 }
             }
-       }
+        }
     end
 end
