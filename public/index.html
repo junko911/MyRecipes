@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport">
-        <meta property="og:image" content="./home-image.png" />
-        <title>Recipes</title>
-        <link rel="icon" href="images/cooking.png" type="image/png" sizes="16x16">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="styles/app.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <h1>MyRecipes</h1>
-            <p>Recipes for everyone</p>
-        </header>
 
-        <div class="container">
-            <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2" id="cuisine-container">
-                <div class="col">
-                    <div class="cuisine" id="american">American</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="british">British</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="chinese">Chinese</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="french">French</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="german">German</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="greek">Greek</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="indian">Indian</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="irish">Irish</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="italian">Italian</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="japanese">Japanese</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="korean">Korean</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="mexican">Mexican</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="middle-eastern">Middle Eastern</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="southern">Southern</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="spanish">Spanish</div>
-                </div>
-                <div class="col">
-                    <div class="cuisine" id="thai">Thai</div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta property='og:title' content='MyRecipes' />
+    <meta property='og:image' content='https://mod3-myrecipes.herokuapp.com/home-image.png' />
+    <meta property='og:description' content='Recipe website built with Vanilla JS and Ruby on Rails' />
+    <meta property='og:url' content='https://mod3-myrecipes.herokuapp.com/' />
+
+    <title>Recipes</title>
+    <link rel="icon" href="images/cooking.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>MyRecipes</h1>
+        <p>Recipes for everyone</p>
+    </header>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2" id="cuisine-container">
+            <div class="col">
+                <div class="cuisine" id="american">American</div>
             </div>
-
-            <div id="search-bar">
-                <form class="form-inline justify-content-center search">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputPassword2" class="sr-only">Password</label>
-                        <input type="text" class="form-control" id="search" placeholder="Enter ingredients">
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-2">Search Recipes</button>
-                </form>
+            <div class="col">
+                <div class="cuisine" id="british">British</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="chinese">Chinese</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="french">French</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="german">German</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="greek">Greek</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="indian">Indian</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="irish">Irish</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="italian">Italian</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="japanese">Japanese</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="korean">Korean</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="mexican">Mexican</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="middle-eastern">Middle Eastern</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="southern">Southern</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="spanish">Spanish</div>
+            </div>
+            <div class="col">
+                <div class="cuisine" id="thai">Thai</div>
             </div>
         </div>
-        
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/a59ab0ad8b.js" crossorigin="anonymous"></script>
 
-        <script src="src/index.js"></script>
-    </body>
+        <div id="search-bar">
+            <form class="form-inline justify-content-center search">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword2" class="sr-only">Password</label>
+                    <input type="text" class="form-control" id="search" placeholder="Enter ingredients">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Search Recipes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a59ab0ad8b.js" crossorigin="anonymous"></script>
+
+    <script src="src/index.js"></script>
+</body>
+
 </html>
