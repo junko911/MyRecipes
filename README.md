@@ -1,24 +1,22 @@
-# README
+# MyRecipes 🍽
+![screenshot](./screenshot.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
+A single page website built with Javascript and Ruby on Rails.
 
-Things you may want to cover:
+[Link](https://mod3-myrecipes.herokuapp.com/)
 
-* Ruby version
+Key features:
 
-* System dependenciesgit 
+Users can...
+* search recipes by cuisines, and ingredients from 500+ recipes of 16 cuisines
+* filter out recipes that contain allergic ingredients from the result
+* like recipes
+* leave comments
 
-* Configuration
+## Technologies and stack
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Frontend: JavaScript, Bootstrap
+* Backend: Ruby/Ruby on Rails
+* Database: Postgresql
+* External API: Spoonacular API(https://spoonacular.com/food-api)
